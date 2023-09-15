@@ -1,2 +1,2 @@
-# informatica-1
-Corso di Informatica 1
+# Informatica terzo anno
+Corso di Informatica
