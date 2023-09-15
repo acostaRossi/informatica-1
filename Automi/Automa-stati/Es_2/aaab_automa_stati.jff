@@ -42,10 +42,10 @@
 			<read>b</read>&#13;
 		</transition>&#13;
 		<transition>&#13;
-			<from>3</from>&#13;
-			<to>0</to>&#13;
-			<controlx>247</controlx>&#13;
-			<controly>225</controly>&#13;
+			<from>0</from>&#13;
+			<to>3</to>&#13;
+			<controlx>257</controlx>&#13;
+			<controly>232</controly>&#13;
 			<read>b</read>&#13;
 		</transition>&#13;
 		<transition>&#13;
