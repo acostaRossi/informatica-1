@@ -32,6 +32,12 @@
 			<transout>1</transout>&#13;
 		</transition>&#13;
 		<transition>&#13;
+			<from>1</from>&#13;
+			<to>0</to>&#13;
+			<read>0</read>&#13;
+			<transout>0</transout>&#13;
+		</transition>&#13;
+		<transition>&#13;
 			<from>0</from>&#13;
 			<to>1</to>&#13;
 			<read>1</read>&#13;
