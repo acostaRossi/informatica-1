@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Insertion Sort</title>
+</head>
+<body>
+	<script type="text/javascript">
+
+	let items = [ 50, 32, 44, 20, 10, 5 ];
+
+	let cnt = 0;
+	let swap = 0;
+
+	for (var i = 0; i < items.length; i++) {
+
+		// Last i elements are already in place 
+		for (var j = 0; j < (items.length - i - 1); j++) {
+
+			cnt++;
+
+			// Checking if the item at present iteration 
+			// is greater than the next iteration
+			if (items[j] > items[j + 1]) {
+
+				// If the condition is true
+				// then swap them
+				var temp = items[j]
+				items[j] = items[j + 1]
+				items[j + 1] = temp
+				swap++
+			}
+		}
+	}
+
+	console.log(items, cnt, swap);
+	</script>
+
+</body>
+</html>

@@ -20,8 +20,12 @@
 
 		while (j >= 0 && items[j] > key) {
 
+			cnt++;
+
 			items[j + 1] = items[j];
 			j = j - 1;
+			
+			swap++;
 		}
 
 		items[j + 1] = key;
