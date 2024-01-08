@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Insertion Sort</title>
+</head>
+<body>
+	<script type="text/javascript">
+
+	let items = [ 50, 32, 44, 20, 10, 5 ];
+
+	let cnt = 0;
+	let swap = 0;
+
+	let key, j;
+
+	for (let i = 1; i < items.length; i++) {
+
+		key = items[i];
+		j = i - 1;
+
+		while (j >= 0 && items[j] > key) {
+
+			items[j + 1] = items[j];
+			j = j - 1;
+		}
+
+		items[j + 1] = key;
+	}
+	
+	console.log(items, cnt, swap);
+	</script>
+
+</body>
+</html>
