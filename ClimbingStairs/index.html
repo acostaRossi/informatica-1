@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Climbing Stairs</title>
+</head>
+<body>
+
+	Numero di gradini
+	<input type="number" name="gradini" id="gradini">
+
+	<script type="text/javascript">
+
+		function fib(n) {
+
+			if (n <= 1)
+				return n;
+			return fib(n - 1) + fib(n - 2);
+		}
+
+		
+		function countWays(s) {
+
+			return fib(s + 1);
+		}
+
+		document.getElementById("gradini").addEventListener("change", () => {
+
+			let gradini = parseInt(document.getElementById("gradini").value);
+
+			console.log(gradini);
+
+			console.log(countWays(gradini));
+		});
+
+	</script>
+</body>
+</html>
