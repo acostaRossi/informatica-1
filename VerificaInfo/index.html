@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Verifica di Informatica HTML/CSS/JS</title>
+	<meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+	<div class="container">
+		<h1>Verifica di Informatica HTML/CSS/JS</h1>
+		<p>Scrivi un programma che permetta di convertire ore, minuti e secondi.</p>
+		<p>Timer: <span id="timer"></span></p>
+
+		<form action="risultato.html" id="mainForm">
+			<div class="row">
+				<span class="label">Ore *</span>
+				<input type="number" name="ore" min="1" required>
+			</div>
+			<div class="row">
+				<span class="label">Minuti *</span>
+				<input type="number" name="minuti" min="1" required>
+			</div>
+			<div class="row">
+				<span class="label">Secondi *</span>
+				<input type="number" name="secondi" min="1" required>
+			</div>
+			<div class="row bg-green">
+				<span class="label" style="color:#FFF;">Trasforma da: *</span><br>
+				Ore <input type="radio" name="tipoDa" value="ore" required>
+				Minuti <input type="radio" name="tipoDa" value="minuti" required>
+				Secondi<input type="radio" name="tipoDa" value="secondi" required>
+			</div>
+			<div class="row bg-red">
+				<span class="label" style="color:#FFF;">Trasforma in: *</span><br>
+				Ore <input type="radio" name="tipoA" value="ore" required>
+				Minuti <input type="radio" name="tipoA" value="minuti" required>
+				Secondi<input type="radio" name="tipoA" value="secondi" required>
+			</div>
+			<div class="row bg-red">
+				<input type="submit" value="Converti">
+			</div>
+		</form>
+		
+	</div>
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>

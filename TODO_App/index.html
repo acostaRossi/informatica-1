@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>TODO App</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+	<div class="container">
+		<h1>TODO App</h1>
+		<div id="divLeft" class="bg-red">
+			<p>New Task</p>
+			<form id="newTaskForm">
+				<div class="row">
+					Titolo
+					<input type="text" name="titolo">
+				</div>
+				<div class="row">
+					<input type="submit" id="btnSubmit" value="Aggiungi">
+				</div>
+			</form>
+		</div>
+		<div id="divCenter" class="bg-green">
+			<p>Tasks</p>
+
+			<div class="center">
+				<table>
+					<thead>
+						<th>#</th>
+						<th>Titolo</th>
+						<th>Stato</th>
+						<th>Elimina</th>
+					</thead>
+					<tbody id="tableBody">
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>

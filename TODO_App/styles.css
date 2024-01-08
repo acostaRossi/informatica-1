@@ -1,0 +1,54 @@
+.container {
+	text-align: center;
+	width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #f3f33c;
+	min-height: 600px;
+}
+p {
+	border: 3px dotted black;
+	background-color: orange;
+}
+.row {
+	padding-bottom: 5px;
+	padding-top: 5px;
+}
+.label {
+	display: inline-block;
+	min-width: 70px;
+	text-align: right;
+}
+.bg-green {
+	background-color: green;
+}
+.bg-red {
+	background-color: red;
+}
+#divLeft {
+	float: left;
+	width: 350px;
+	min-height: 540px;
+}
+#divCenter {
+	float: right;
+	width: 450px;
+	min-height: 540px;	
+}
+table {
+	display: inline-block;
+}
+table, th, td {
+	border: 1px solid white;
+	color: white;
+	border-collapse: collapse;
+}
+.center {
+	text-align: center;
+}
+.no-padding {
+	padding: 0px;
+}
+.no-margin {
+	margin: 0px;
+}

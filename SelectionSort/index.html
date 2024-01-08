@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Selection Sort</title>
+</head>
+<body>
+
+	<script type="text/javascript">
+		
+	let items = [ 50, 32, 44, 20, 10, 5 ];
+
+	let cnt = 0;
+	let swap = 0;
+
+	for (let i = 0; i < items.length; i++)
+	{
+		cnt++;
+
+		let min = i;
+
+		// cerco il minimo tra i successivi
+
+		for (let y = i + 1; y < items.length; y++) {
+
+			cnt++;
+
+			if (items[min] > items[y]) {
+
+				min = y;
+			}
+		}
+
+		// scambio il minimo con il numero iniziale
+
+		if (min != i) {
+
+			swap++;
+
+			let temporary = items[i];
+			items[i] = items[min];
+			items[min] = temporary;
+		}
+	}
+
+	console.log(items, cnt, swap);
+	</script>
+
+</body>
+</html>
